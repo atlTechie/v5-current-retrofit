@@ -26,21 +26,39 @@ body {
   @include imageSizing(100%, 175px, contain, center);
 }
 
+.shopping-cart-item-img {
+  @include imageSizing(100px, 100px, contain, center);
+}
+
 // Media Queries
 @media (min-width: 576px) {
   .item-detail-main-image-wrapper {
     @include imageSizing(100%, 225px, contain, center);
+  }
+
+  .shopping-cart-item-img {
+    @include imageSizing(183px, 183px, contain, center);
   }
 }
 @media (min-width: 768px) {
   .item-detail-main-image-wrapper {
     @include imageSizing(100%, 335px, contain, center);
   }
+
+  .shopping-cart-item-img {
+    @include imageSizing(100%, 217px, contain, center);
+    margin: auto;
+  }
 }
 
 @media (min-width: 1024px) {
   .shopping-header-image-wrapper {
     @include imageSizing(100%, 250px, cover, center);
+  }
+
+  .shopping-cart-item-img {
+    @include imageSizing(100%, 156px, contain, center);
+    margin: auto;
   }
 }
 @media (min-width: 1400px) {

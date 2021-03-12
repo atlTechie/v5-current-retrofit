@@ -3,4 +3,23 @@ extends layout
 block title 
 block content 
     include ./components/shopping-nav.pug
+    .row 
+        .col-12 
+            h2 Your Shopping Cart
+    .row.justify-content-between 
+        .col-md-5.col-lg-4.col-xl-3.order-1.order-md-2.mb-3
+            include ./components/shopping-cart-price-box.pug
                 
+        .col-md-7.col-lg-8.col-xl-9.text-start.order-2.order-md-1
+            .row#shopping-cart-grid
+                -for(i=0; i<3; i++) 
+                    include ../../src/views/components/shopping-cart-item.pug
+                   
+                        
+
+                                
+                        
+            
+
+
+
