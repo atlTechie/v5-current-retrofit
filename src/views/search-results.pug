@@ -1,0 +1,22 @@
+extends layout 
+
+block title 
+block content 
+    include ./components/shopping-nav.pug
+    include ./components/shopping-sort-bar.pug
+    
+    .row.mt-lg-0
+        .col-12.col-lg-4.col-xl-3.mb-0
+            include ./components/shopping-mobile-filter-bar.pug
+            include ./components/shopping-desktop-filter-bar.pug
+
+        .col-12.col-lg-8.col-xl-9
+            include ./components/search-results-breadcrumb.pug
+
+            .row#search-results-grid
+                -for(i=0; i< 20; i++)
+                    include ./components/search-results-item.pug
+
+    include ./components/search-results-pagination.pug
+    
+    include ./components/shopping-disclaimer.pug

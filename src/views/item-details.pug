@@ -1,0 +1,45 @@
+extends layout 
+
+block title 
+block content 
+    include ./components/shopping-nav.pug
+
+
+    .row
+        include ./components/item-detail-title.pug
+        include ./components/item-detail-image.pug
+        .col-md-6.col-lg-5.col-xl-4#item-detail-pricing-wrapper.text-end
+            .row.mt-3.mt-md-0.align-items-end
+                .col-6.text-start
+                    small.text-success On Sale Now! 
+                .col-6
+                    small.d-block From
+                        spanps-2.h2.item-detail-price 6370 
+                .col-12.mb-3
+                    include ./components/item-detail-qty-msg.pug
+                .col-12.mb-3.text-start
+                    include ./components/item-detail-delivery-method-widget.pug
+                .col-12.mb-3.text-start
+                    p.mb-0.text-muted You will select the store during checkout.
+                    a(data-bs-toggle="collapse" href="#item-detail-store-list" role="button" aria-expanded="false" aria-controls="item-detail-store-list")
+                        span.i.bi-geo-alt-fill 
+                        span See available stores near you.
+                .col-12
+                    .row.align-items-end
+                        .col-6.text-start
+                            include ./components/item-detail-qty-widget.pug
+                        .col-6
+                            a.btn.btn-outline-primary.w-100(href="#") Add to Cart
+
+                         
+                        
+                
+                .col-12#item-detail-available-stores.text-start
+                    include ./components/item-detail-store-list.pug
+
+                
+        .col-12.mt-3
+            h5.text-start Item Details
+        .col-12.text-start
+            include ./components/item-detail-item-details.pug 
+        include ./components/shopping-disclaimer.pug
