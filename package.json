@@ -1,0 +1,26 @@
+{
+  "name": "v5-current-retrofit",
+  "version": "1.0.0",
+  "description": "Retrofit of current V5 site. Task is to make entire site responsive.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ewright2021/V5-Current-Responsive.git"
+  },
+  "keywords": [
+    "responsive",
+    "html/css",
+    "bootstrap",
+    "pug",
+    "javascript"
+  ],
+  "author": "Erika \"E\" Wright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ewright2021/V5-Current-Responsive/issues"
+  },
+  "homepage": "https://github.com/Ewright2021/V5-Current-Responsive#readme"
+}
