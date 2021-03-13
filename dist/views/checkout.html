@@ -62,62 +62,86 @@
           </div>
           <div class="row"> 
             <div class="col-12"> 
-              <h2>Your Wishlist</h2>
+              <h2>Checkout</h2>
             </div>
           </div>
           <div class="row justify-content-between"> 
-            <div class="col-md-5 col-lg-4 col-xl-3 order-1 order-md-2 mb-3">
+            <div class="col-md-5 col-lg-4 col-xl-3 order-2 order-md-2 mb-3">
+              <div class="row" id="shopping-cart-price-box">
+                <div class="col-8 text-start"> <small class="d-block fw-bold">Balance before purchase</small></div>
+                <div class="col-4 text-end"> <small class="text-uppercase">2,026,905</small></div>
+                <div class="col-8 text-start"> <small class="d-block fw-bold">Purchase Amount<span class="small fw-normal"> (in points)</span></small></div>
+                <div class="col-4 text-end"> <small class="text-uppercase">278</small></div>
+                <div class="col-8 text-start"> <small class="d-block fw-bold">Balance after purchase</small></div>
+                <div class="col-4 text-end"> <small class="text-uppercase">2,206,627</small></div>
+              </div>
+              <div class="row my-3 d-md-block">
+                <div class="col-12"> <a class="d-block btn btn-primary" href="#">Continue to Checkout</a></div>
+              </div>
               <div class="row text-start mt-3 small" id="shopping-cart-info">
                 <div class="col-12 bg-light py-3"> 
                   <p>Items in your shopping cart expire and will be removed after 30 days. Points and availability subject to change. </p>
                   <p class="mb-0">Some content is provided by a third party on an as-is basis. This content is subject to change and/or removal at any time. Points and availability of items are subject to change.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-7 col-lg-8 col-xl-9 text-start order-2 order-md-1">
-              <div class="row" id="shopping-cart-grid">
-                <div class="col-12 mb-3 shopping-cart-item">
-                  <div class="row border py-3 px-2 mx-auto">
-                    <div class="col-4 col-md-6 col-lg-4 mb-md-3 mb-xl-0">
-                      <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="#"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
-                    </div>
-                    <div class="col-8 col-md-6 col-lg-8">
-                      <div class="row">
-                        <div class="col-12 mb-2"> <a class="mb-2 d-block" href="#">Apple AirPods w/ Wireless Charging Case</a>
-                          <p class="mb-2 align-self-end item-detail-price">6370 points</p>
-                        </div>
-                        <div class="col-8"> 
-                          <div class="progress"> 
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-xl-4 col-xxl-5 text-start align-self-end align-self-center"><small class="cart-actions text-xxl-end"> <a class="mb-0 d-block d-sm-inline d-md-block d-lg-block d-xxl-inline text-secondary small" href="#">Copy to Cart</a><span class="d-none d-sm-inline d-md-none d-xxl-inline">  |   </span><a class="mb-0 d-block d-sm-inline d-md-block d-xxl-inline text-secondary small" href="#">Move to Cart</a><span class="d-none d-sm-inline d-md-none d-xxl-inline">  |   </span><a class="mb-0 d-block d-sm-inline d-md-block d-xxl-inline text-secondary small" href="#">Remove</a></small></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 mb-3 shopping-cart-item">
-                  <div class="row border py-3 px-2 mx-auto">
-                    <div class="col-4 col-md-6 col-lg-4 mb-md-3 mb-xl-0">
-                      <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="#"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
-                    </div>
-                    <div class="col-8 col-md-6 col-lg-8">
-                      <div class="row">
-                        <div class="col-12 mb-2"> <a class="mb-2 d-block" href="#">Apple AirPods w/ Wireless Charging Case</a>
-                          <p class="mb-2 align-self-end item-detail-price">6370 points</p>
-                        </div>
-                        <div class="col-8"> 
-                          <div class="progress"> 
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-xl-4 col-xxl-5 text-start align-self-end align-self-center"><small class="cart-actions text-xxl-end"> <a class="mb-0 d-block d-sm-inline d-md-block d-lg-block d-xxl-inline text-secondary small" href="#">Copy to Cart</a><span class="d-none d-sm-inline d-md-none d-xxl-inline">  |   </span><a class="mb-0 d-block d-sm-inline d-md-block d-xxl-inline text-secondary small" href="#">Move to Cart</a><span class="d-none d-sm-inline d-md-none d-xxl-inline">  |   </span><a class="mb-0 d-block d-sm-inline d-md-block d-xxl-inline text-secondary small" href="#">Remove</a></small></div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="row mt-3 small text-start"> 
+                <div class="col-12 small"> 
+                  <p class="fw-bold">Purchasing Information </p>
+                  <p>The points required to purchase your items will be deducted from your account balance. </p>
+                  <p>Here's how our order processing works: </p>
+                  <ul> 
+                    <li>First, we convert your points to a currency equivalent. For example, we may convert your points into a US dollar equivalent.</li>
+                    <li>Next, using a background program account for currency transactions, we make the purchase of your item from a supplier on your behalf, for instance in dollars.</li>
+                    <li>Then, we subtract the corresponding number of points from your point account. The items are shipped to you directly from the supplier.</li>
+                  </ul>
                 </div>
               </div>
-              <div class="row my-3 d-md-none">
+            </div>
+            <div class="col-md-7 col-lg-8 col-xl-9 text-start order-1 order-md-1">
+              <div class="row">
+                <div class="col-12"> 
+                  <div class="alert alert-secondary"> <small class="mb-0"> NOTICE: Changing the address here may affect sales tax and can change the points required to redeem items in your cart. Your shipping address can also affect the availability of some items. </small></div>
+                </div>
+                <div class="col-12" id="checkout-wrapper">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-sm-6 mb-3">
+                        <label class="form-label" for="checkout-recipient">Recipient Name</label>
+                        <input class="form-control" id="checkout-recipient" type="text" placeholder="">
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <label class="form-label" for="checkout-phone">Phone Number</label>
+                        <input class="form-control" id="checkout-phone" type="phone" placeholder="">
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="form-label" for="checkout-email">Email Address</label>
+                        <input class="form-control" id="checkout-email" type="email" placeholder="">
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="form-label" for="checkout-address-1">Address</label>
+                        <input class="form-control" id="checkout-address-1" type="text" placeholder="">
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="form-label" for="checkout-address-2">Address 2</label>
+                        <input class="form-control" id="checkout-address-2" type="text" placeholder="">
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <label class="form-label" for="checkout-address-2">City</label>
+                        <input class="form-control" id="checkout-address-2" type="text" placeholder="">
+                      </div>
+                      <div class="col-sm-3 mb-3">
+                        <label class="form-label" for="checkout-address-2">State</label>
+                        <input class="form-control" id="checkout-address-2" type="text" placeholder="">
+                      </div>
+                      <div class="col-sm-3 mb-3">
+                        <label class="form-label" for="checkout-address-2">Zip </label>
+                        <input class="form-control" id="checkout-address-2" type="text" placeholder="">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row my-3 d-none">
                 <div class="col-12"> <a class="d-block btn btn-primary" href="#">Continue to Checkout</a></div>
               </div>
             </div>

@@ -1,0 +1,38 @@
+extends layout 
+
+block title 
+block content 
+    include ./components/shopping-nav.pug
+    .row 
+        .col-12 
+            h2 Checkout
+    .row.justify-content-between 
+        .col-md-5.col-lg-4.col-xl-3.order-2.order-md-2.mb-3
+            include ./components/checkout-price-box.pug
+            .row.my-3.d-md-block
+                .col-12 
+                    a.d-block.btn.btn-primary(href="#") Continue to Checkout
+            include ./components/shopping-cart-info-box.pug
+            .row.mt-3.small.text-start 
+                .col-12.small 
+                    p.fw-bold Purchasing Information 
+                    p The points required to purchase your items will be deducted from your account balance. 
+                    p Here's how our order processing works: 
+                    ul 
+                        li First, we convert your points to a currency equivalent. For example, we may convert your points into a US dollar equivalent.
+                        li Next, using a background program account for currency transactions, we make the purchase of your item from a supplier on your behalf, for instance in dollars.
+                        li Then, we subtract the corresponding number of points from your point account. The items are shipped to you directly from the supplier.
+
+
+                
+        .col-md-7.col-lg-8.col-xl-9.text-start.order-1.order-md-1
+            .row
+                .col-12 
+                    .alert.alert-secondary 
+                        small.mb-0  NOTICE: Changing the address here may affect sales tax and can change the points required to redeem items in your cart. Your shipping address can also affect the availability of some items. 
+                .col-12#checkout-wrapper
+                    include ./components/form-checkout.pug
+
+            .row.my-3.d-none
+                .col-12 
+                    a.d-block.btn.btn-primary(href="#") Continue to Checkout
