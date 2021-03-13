@@ -1,0 +1,27 @@
+.col-12.mb-3.shopping-cart-item
+    .row.border.py-3.px-2.mx-auto
+        .col-4.col-md-6.col-lg-4.mb-md-3.mb-xl-0
+            .border.shopping-cart-item-img.p-1.py-md-3 
+                a(href="#") 
+                    img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg", alt="")
+        .col-8.col-md-6.col-lg-8
+            .row
+                .col-12.mb-2 
+                    a.mb-2.d-block(href="#") Apple AirPods w/ Wireless Charging Case
+                    
+                    p.mb-2.align-self-end.item-detail-price 6370 
+                .col-sm-7.col-md-12.col-xl-4.mb-2
+                    small.mb-2.d-block
+                        span.fw-bold.d-block.d-md-inline.d-block Delivery Method: 
+                        span.d-block In-Store Pickup 
+                    small
+                        span.small.d-block Choose store during checkout.
+                .col-sm-5.col-md-12.col-lg-6.col-xl-4.col-xxl-3.mb-2.mb-lg-0
+                    
+                    include ./item-detail-qty-widget.pug
+                
+                .col-lg-6.col-xl-4.col-xxl-5.text-start.align-self-end.align-self-center.text-xxl-end
+                    small.cart-actions.text-xxl-end 
+                        a.mb-0.d-block.d-sm-inline.d-md-block.d-lg-block.d-xxl-inline.text-secondary.small(href="#") Remove from Cart
+                        span.d-none.d-sm-inline.d-md-none.d-xxl-inline   |   
+                        a.mb-0.d-block.d-sm-inline.d-md-block.d-xxl-inline.text-secondary.small(href="#") Move to Wish List 
