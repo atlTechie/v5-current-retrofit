@@ -13,7 +13,7 @@ head
   link(rel="stylesheet", href="/src/style.css")
   title Hello, world!
 body 
-    include ../views/components/header.pug
+    include ./components/header.pug
     main.flex-grow-1.d-flex.flex-column.py-3.align-content-center.justify-content-center
         .container-fluid 
             .row 
@@ -24,7 +24,7 @@ body
                     block content
                         -for(i=0; i<2; i++)
                             p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum aliquam sequi debitis ducimus, facilis magni aut? Libero enim excepturi sequi molestiae perferendis dolores in quae laborum tenetur! Reiciendis porro perferendis sequi incidunt praesentium fugiat, excepturi doloremque. Eveniet ea voluptas magni.
-    include ../views/components/footer.pug
+    include ./components/footer.pug
 
 // Optional JavaScript; choose one of the two!
 // Option 1: Bootstrap Bundle with Popper

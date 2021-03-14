@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Firebase Authentication-->
+  <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="/src/style.css">
+  <title>Hello, world!</title>
+</head>
+<body> 
+  <header> 
+    <div class="container-fluid"> 
+      <div class="row bg-warning">
+        <div class="col-6 col-sm-4 col-md-2 col-xl-1 mx-auto py-2"><a href="/"> <img class="img-fluid" src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png"></a></div>
+      </div>
+      <div class="row"> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+          <div class="container-fluid"><a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="flex-grow-1 d-flex flex-column py-3 align-content-center justify-content-center">
+    <div class="container-fluid"> 
+      <div class="row"> 
+        <div class="col-lg-10 col-xl-8 mx-auto text-center content-bg">
+          <div class="row mx-auto">
+            <div class="col-12 px-md-0">
+              <div class="row mb-2 align-items-center" id="shopping-navbar">
+                <div class="col-8 col-md-3 col-xl-2 order-1"><a class="btn btn-primary w-100" href="#">Departments</a></div>
+                <div class="col-4 col-md-2 col-xl-1 order-2 order-md-3">
+                  <div class="row">
+                    <div class="col-6 text-center"><a class="lead" href="./shopping-cart.html"><i class="bi-basket d-block"></i><span class="d-none">Cart</span></a></div>
+                    <div class="col-6"><a class="lead" href="./wishlist.html"><i class="bi-heart d-block"></i><span class="d-none">List</span></a></div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-7 col-xl-9 order-3 order-md-2">
+                  <div class="input-group">
+                    <select class="form-select d-none d-xl-block" name="dept-dropdown" style="width: 100px!important;">
+                      <option value="Apple Store">All Departments</option>
+                      <option value="Apple Store">Apple Store</option>
+                      <option value="Apple Store">Baby</option>
+                    </select>
+                    <input class="form-control" type="text"><a class="btn btn-primary" href="#"><i class="bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-12"> 
+              <h2>Checkout</h2>
+            </div>
+          </div>
+          <div class="row justify-content-between"> 
+            <div class="col-md-5 col-lg-4 col-xl-3 order-2 order-md-2 mb-3">
+              <div class="row" id="shopping-cart-price-box">
+                <div class="col-8 text-start"> <small class="d-block fw-bold">Balance before purchase</small></div>
+                <div class="col-4 text-end"> <small class="text-uppercase">2,026,905</small></div>
+                <div class="col-8 text-start"> <small class="d-block fw-bold">Purchase Amount<span class="small fw-normal"> (in points)</span></small></div>
+                <div class="col-4 text-end"> <small class="text-uppercase">278</small></div>
+                <div class="col-8 text-start"> <small class="d-block fw-bold">Balance after purchase</small></div>
+                <div class="col-4 text-end"> <small class="text-uppercase">2,206,627</small></div>
+              </div>
+              <div class="row my-3 d-md-block">
+                <div class="col-12"> <a class="d-block btn btn-primary" href="#">Continue to Checkout</a></div>
+              </div>
+              <div class="row text-start mt-3 small" id="shopping-cart-info">
+                <div class="col-12 bg-light py-3"> 
+                  <p>Items in your shopping cart expire and will be removed after 30 days. Points and availability subject to change. </p>
+                  <p class="mb-0">Some content is provided by a third party on an as-is basis. This content is subject to change and/or removal at any time. Points and availability of items are subject to change.</p>
+                </div>
+              </div>
+              <div class="row mt-3 small text-start"> 
+                <div class="col-12 small"> 
+                  <p class="fw-bold">Purchasing Information </p>
+                  <p>The points required to purchase your items will be deducted from your account balance. </p>
+                  <p>Here's how our order processing works: </p>
+                  <ul> 
+                    <li>First, we convert your points to a currency equivalent. For example, we may convert your points into a US dollar equivalent.</li>
+                    <li>Next, using a background program account for currency transactions, we make the purchase of your item from a supplier on your behalf, for instance in dollars.</li>
+                    <li>Then, we subtract the corresponding number of points from your point account. The items are shipped to you directly from the supplier.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-8 col-xl-9 text-start order-1 order-md-1">
+              <div class="row">
+                <div class="col-12"> 
+                  <div class="alert alert-secondary"> <small class="mb-0"> NOTICE: Changing the address here may affect sales tax and can change the points required to redeem items in your cart. Your shipping address can also affect the availability of some items. </small></div>
+                </div>
+                <div class="col-12" id="checkout-wrapper">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-sm-6 mb-3">
+                        <label class="form-label" for="checkout-recipient">Recipient Name</label>
+                        <input class="form-control" id="checkout-recipient" type="text" placeholder="">
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <label class="form-label" for="checkout-phone">Phone Number</label>
+                        <input class="form-control" id="checkout-phone" type="phone" placeholder="">
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="form-label" for="checkout-email">Email Address</label>
+                        <input class="form-control" id="checkout-email" type="email" placeholder="">
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="form-label" for="checkout-address-1">Address</label>
+                        <input class="form-control" id="checkout-address-1" type="text" placeholder="">
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="form-label" for="checkout-address-2">Address 2</label>
+                        <input class="form-control" id="checkout-address-2" type="text" placeholder="">
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <label class="form-label" for="checkout-address-2">City</label>
+                        <input class="form-control" id="checkout-address-2" type="text" placeholder="">
+                      </div>
+                      <div class="col-sm-3 mb-3">
+                        <label class="form-label" for="checkout-address-2">State</label>
+                        <input class="form-control" id="checkout-address-2" type="text" placeholder="">
+                      </div>
+                      <div class="col-sm-3 mb-3">
+                        <label class="form-label" for="checkout-address-2">Zip </label>
+                        <input class="form-control" id="checkout-address-2" type="text" placeholder="">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row my-3 d-none">
+                <div class="col-12"> <a class="d-block btn btn-primary" href="#">Continue to Checkout</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer> 
+    <div class="container-fluid"> 
+      <div class="row"> 
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
+        </ul>
+      </div>
+      <div class="row py-2 bg-warning"> <small class="d-block text-center">Copyright &copy; 2021. RewardTrax.com</small></div>
+    </div>
+  </footer>
+</body>
+<!-- Optional JavaScript; choose one of the two!-->
+<!-- Option 1: Bootstrap Bundle with Popper-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first-->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to usehttps://firebase.google.com/docs/web/setup#available-libraries
+-->
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+  apiKey: "AIzaSyBLvfcaU_K95kHd_yUVO9__k5fQB6UJHC4",
+  authDomain: "rt-v5-participant-sites.firebaseapp.com",
+  databaseURL: "https://rt-v5-participant-sites-default-rtdb.firebaseio.com",
+  projectId: "rt-v5-participant-sites",
+  storageBucket: "rt-v5-participant-sites.appspot.com",
+  messagingSenderId: "383414696567",
+  appId: "1:383414696567:web:e8cfc3541a4b4b91ce6472"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="../../app.js"></script>
