@@ -1,3 +1,5 @@
+console.log("app is running");
+
 // Bring in Navigation
 // $.ajax({
 //   url:
