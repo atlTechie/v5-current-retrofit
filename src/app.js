@@ -18,3 +18,30 @@ console.log("app is running");
 //     }
 //   },
 // });
+
+// Activate shopping drilldown
+// function deptDropdown() {
+//   const stackBtntoggle = document.getElementById("stack-menu-toggle");
+//   const stackMenu = document.getElementById("stack-menu");
+//   stackBtntoggle.addEventListener("click", function () {
+//     if (stackMenu.style.left === "-20vw") {
+//       stackMenu.style.left = 0;
+//     } else {
+//       stackMenu.style.left = "-20vw";
+//     }
+//   });
+// }
+
+// $(document).ready(function () {
+//   $("#stack-menu-toggle").click(function () {
+//     $("nav#stack-menu").style.width = "250px";
+//   });
+// });
+
+function openNav() {
+  document.getElementById("stack-menu").style.width = "20vw";
+}
+
+function closeNav() {
+  document.getElementById("stack-menu").style.width = "0";
+}

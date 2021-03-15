@@ -2,7 +2,7 @@
     .col-12.px-md-0
         .row#shopping-navbar.mb-2.align-items-center
             .col-8.col-md-3.col-xl-2.order-1
-                a.btn.btn-primary.w-100(href="#") Departments
+                a.btn.btn-primary.w-100#stack-menu-toggle(onclick="openNav()") Departments
             .col-4.col-md-2.col-xl-1.order-2.order-md-3
                 .row
                     .col-6.text-center
@@ -24,3 +24,5 @@
                     input.form-control(type="text")
                     a.btn.btn-primary(href="#")
                         i.bi-search
+    .col-12 
+        include ./shopping-stack-menu.pug

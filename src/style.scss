@@ -47,6 +47,31 @@ main {
   @include imageSizing(100px, 100px, contain, center);
 }
 
+// Shopping Menu DrillDown
+#stack-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0vw;
+  z-index: 4;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+#stack-menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 20px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.stack-menu {
+  border-radius: 0;
+}
+
 // Media Queries
 @media (min-width: 576px) {
   .item-detail-main-image-wrapper {
