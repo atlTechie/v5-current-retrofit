@@ -57,8 +57,18 @@ main {
   z-index: 4;
   overflow-y: auto;
   transition: all 0.3s ease-in-out;
-  background: white;
 }
+
+// #stack-menu ul {
+//   list-style: none;
+//   li {
+//     border-width: 0 0 1px !important;
+//     position: relative;
+//     display: block;
+//     padding: 0.5rem 1rem !important;
+//     text-decoration: none;
+//   }
+// }
 
 #stack-menu .closebtn {
   position: absolute;
