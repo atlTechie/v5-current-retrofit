@@ -39,7 +39,7 @@ console.log("app is running");
 // });
 
 function openNav() {
-  document.getElementById("stack-menu").style.width = "20vw";
+  document.getElementById("stack-menu").style.width = "300px";
 }
 
 function closeNav() {
