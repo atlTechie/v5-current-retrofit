@@ -29,7 +29,9 @@ block content
                         .col-6.text-start
                             include ./components/item-detail-qty-widget.pug
                         .col-6
-                            a.btn.btn-outline-primary.w-100(href="#") Add to Cart
+                            button#itemAddedToastBtn.btn.btn-outline-primary.w-100(onclick="itemAddedtoCart()") Add to Cart
+                .col-12 
+                    include ./components/item-added-toast.pug
 
                          
                         

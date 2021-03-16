@@ -50,21 +50,21 @@
           <div class="row mx-auto">
             <div class="col-12 px-md-0">
               <div class="row mb-2 align-items-center" id="shopping-navbar">
-                <div class="col-8 col-md-3 col-xl-2 order-1 mb-3"><a class="btn btn-primary w-100" id="stack-menu-toggle" onclick="openNav()">Departments</a></div>
+                <div class="col-8 col-md-3 col-xl-2 order-1 mb-3 mb-sm-0"><a class="btn btn-primary w-100" id="stack-menu-toggle" onclick="openNav()">Departments</a></div>
                 <div class="col-4 col-md-2 col-xl-1 order-2 order-md-3">
-                  <div class="row">
-                    <div class="col-6 text-center"><a class="lead" href="./shopping-cart.html"><i class="bi-basket d-block"></i><span class="d-none">Cart</span></a></div>
-                    <div class="col-6"><a class="lead" href="./wishlist.html"><i class="bi-heart d-block"></i><span class="d-none">List</span></a></div>
+                  <div class="row" id="header-row">
+                    <div class="col-6 text-center"><a class="lead" href="./shopping-cart.html"><i class="bi-basket" id="item-added"></i><span class="d-none">Cart</span></a></div>
+                    <div class="col-6"><a class="lead" id="added-to-wishlist" href="./wishlist.html"><i class="bi-heart d-block"></i><span class="d-none">List</span></a></div>
                   </div>
                 </div>
                 <div class="col-12 col-md-7 col-xl-9 order-3 order-md-2">
                   <div class="input-group">
-                    <select class="form-select d-none d-xl-block" name="dept-dropdown" style="width: 100px!important;">
+                    <select class="form-select d-none d-xl-block" id="cboCatalogCategory" name="dept-dropdown" style="flex: .25; width: 250px!important;">
                       <option value="Apple Store">All Departments</option>
                       <option value="Apple Store">Apple Store</option>
                       <option value="Apple Store">Baby</option>
                     </select>
-                    <input class="form-control" type="text"><a class="btn btn-primary" href="#"><i class="bi-search"></i></a>
+                    <input class="form-control psg_department_search_textbox" id="productkeywords" type="text" style="flex: 1; width: 75%!;"><a class="btn btn-primary" href="#"><i class="bi-search"></i></a>
                   </div>
                 </div>
               </div>
@@ -76,33 +76,52 @@
                     <div class="ml-auto closebtn" onclick="closeNav()"> <i class="bi bi-x-circle"></i></div>
                   </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li><a href="#">Shop The Catalog</a>
-                    <ul>
-                      <li><a href="#">Apple</a></li>
-                      <li><a href="#">Baby</a></li>
-                      <li><a href="#">Books</a></li>
-                      <li><a href="#">Charitable Organizations</a></li>
-                      <li><a href="#">Electronics</a></li>
-                      <li><a href="#">Fashion Accessories</a></li>
-                      <li><a href="#">Gift Baskets</a></li>
-                      <li><a href="#">Home & Garden</a></li>
-                      <li><a href="#">Jewelry</a></li>
-                      <li><a href="#">Movies</a></li>
-                      <li><a href="#">Music</a></li>
-                      <li><a href="#">Office Products</a></li>
-                      <li><a href="#">On Sale Now!</a></li>
-                      <li><a href="#">Personal Care</a></li>
-                      <li><a href="#">Pets</a></li>
-                      <li><a href="#">Sporting Goods</a></li>
-                      <li><a href="#">Tools & Harware</a></li>
-                      <li><a href="#">Toys & Hobbies</a></li>
-                      <li><a href="#">Video Games</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Travel</a></li>
-                </ul>
+                <div class="row">
+                  <ul class="list-group list-group-flush">
+                    <li><a href="#">Shop The Catalog</a>
+                      <ul>
+                        <li><a href="#">Apple
+                            <ul> 
+                              <li> <a href="# ">Airpods </a></li>
+                              <li> <a href="# ">Apple TV </a></li>
+                              <li> <a href="# ">iPads</a></li>
+                              <li> <a href="# ">iPod Accessories</a></li>
+                              <li> <a href="# ">iPods </a></li>
+                              <li> <a href="# ">Mac Systems </a></li>
+                              <li> <a href="# ">Watches </a></li>
+                            </ul></a></li>
+                        <li><a href="#">Baby
+                            <ul> 
+                              <li> <a href="#">Care & Safety</a></li>
+                              <li> <a href="#">Clothing</a></li>
+                              <li> <a href="#">Feeding</a></li>
+                              <li> <a href="#">Gear</a></li>
+                              <li> <a href="#">Nursery</a></li>
+                            </ul></a>
+                          <li><a href="#">Books</a></li>
+                          <li><a href="#">Charitable Organizations</a></li>
+                          <li><a href="#">Electronics</a></li>
+                          <li><a href="#">Fashion Accessories</a></li>
+                          <li><a href="#">Gift Baskets</a></li>
+                          <li><a href="#">Home & Garden</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Movies</a></li>
+                          <li><a href="#">Music</a></li>
+                          <li><a href="#">Office Products</a></li>
+                          <li><a href="#">On Sale Now!</a></li>
+                          <li><a href="#">Personal Care</a></li>
+                          <li><a href="#">Pets</a></li>
+                          <li><a href="#">Sporting Goods</a></li>
+                          <li><a href="#">Tools & Harware</a></li>
+                          <li><a href="#">Toys & Hobbies</a></li>
+                          <li><a href="#">Video Games</a></li>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Travel</a></li>
+                  </ul>
+                </div>
               </nav>
             </div>
           </div>
@@ -136,20 +155,20 @@
                 <div class="col-12 mb-3 shopping-cart-item">
                   <div class="row border py-3 px-2 mx-auto">
                     <div class="col-4 col-md-6 col-lg-4 mb-md-3 mb-xl-0">
-                      <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="#"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
+                      <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="./item-details.html"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
                     </div>
                     <div class="col-8 col-md-6 col-lg-8">
                       <div class="row">
-                        <div class="col-12 mb-2"> <a class="mb-2 d-block" href="#">Apple AirPods w/ Wireless Charging Case</a>
+                        <div class="col-12 mb-2"> <a class="mb-2 d-block" href="./item-details.html">Apple AirPods w/ Wireless Charging Case</a>
                           <p class="mb-2 align-self-end item-detail-price">6370 </p>
                         </div>
                         <div class="col-sm-7 col-md-12 col-xl-4 mb-2"><small class="mb-2 d-block"><span class="fw-bold d-block d-md-inline d-block">Delivery Method: </span><span class="d-block">In-Store Pickup </span></small><small><span class="small d-block">Choose store during checkout.</span></small></div>
                         <div class="col-sm-5 col-md-12 col-lg-6 col-xl-4 col-xxl-3 mb-2 mb-lg-0">
                           <label for="quantity">Quantity </label>
                           <div class="input-group">
-                            <button class="btn btn-outline-secondary" id="button-addon1" type="button"> <i class="bi-dash"></i></button>
-                            <input class="form-control text-center" type="text" placeholder="1" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                            <button class="btn btn-outline-secondary" id="button-addon2" type="button"> <i class="bi-plus"></i></button>
+                            <button class="btn btn-outline-secondary" id="itemQtyDecr" type="button" onclick="itemQtyDecr()"> <i class="bi-dash"></i></button>
+                            <input class="form-control text-center" id="itemQty" type="text" placeholder="1" aria-label="Example text with button addon" aria-describedby="button-addon1" value="1">
+                            <button class="btn btn-outline-secondary" id="itemQtyIncr" type="button" onclick="itemQtyIncr()"> <i class="bi-plus"></i></button>
                           </div>
                         </div>
                         <div class="col-lg-6 col-xl-4 col-xxl-5 text-start align-self-end align-self-center text-xxl-end"><small class="cart-actions text-xxl-end"> <a class="mb-0 d-block d-sm-inline d-md-block d-lg-block d-xxl-inline text-secondary small" href="#">Remove from Cart</a><span class="d-none d-sm-inline d-md-none d-xxl-inline">  |   </span><a class="mb-0 d-block d-sm-inline d-md-block d-xxl-inline text-secondary small" href="#">Move to Wish List </a></small></div>
@@ -160,20 +179,20 @@
                 <div class="col-12 mb-3 shopping-cart-item">
                   <div class="row border py-3 px-2 mx-auto">
                     <div class="col-4 col-md-6 col-lg-4 mb-md-3 mb-xl-0">
-                      <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="#"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
+                      <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="./item-details.html"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
                     </div>
                     <div class="col-8 col-md-6 col-lg-8">
                       <div class="row">
-                        <div class="col-12 mb-2"> <a class="mb-2 d-block" href="#">Apple AirPods w/ Wireless Charging Case</a>
+                        <div class="col-12 mb-2"> <a class="mb-2 d-block" href="./item-details.html">Apple AirPods w/ Wireless Charging Case</a>
                           <p class="mb-2 align-self-end item-detail-price">6370 </p>
                         </div>
                         <div class="col-sm-7 col-md-12 col-xl-4 mb-2"><small class="mb-2 d-block"><span class="fw-bold d-block d-md-inline d-block">Delivery Method: </span><span class="d-block">In-Store Pickup </span></small><small><span class="small d-block">Choose store during checkout.</span></small></div>
                         <div class="col-sm-5 col-md-12 col-lg-6 col-xl-4 col-xxl-3 mb-2 mb-lg-0">
                           <label for="quantity">Quantity </label>
                           <div class="input-group">
-                            <button class="btn btn-outline-secondary" id="button-addon1" type="button"> <i class="bi-dash"></i></button>
-                            <input class="form-control text-center" type="text" placeholder="1" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                            <button class="btn btn-outline-secondary" id="button-addon2" type="button"> <i class="bi-plus"></i></button>
+                            <button class="btn btn-outline-secondary" id="itemQtyDecr" type="button" onclick="itemQtyDecr()"> <i class="bi-dash"></i></button>
+                            <input class="form-control text-center" id="itemQty" type="text" placeholder="1" aria-label="Example text with button addon" aria-describedby="button-addon1" value="1">
+                            <button class="btn btn-outline-secondary" id="itemQtyIncr" type="button" onclick="itemQtyIncr()"> <i class="bi-plus"></i></button>
                           </div>
                         </div>
                         <div class="col-lg-6 col-xl-4 col-xxl-5 text-start align-self-end align-self-center text-xxl-end"><small class="cart-actions text-xxl-end"> <a class="mb-0 d-block d-sm-inline d-md-block d-lg-block d-xxl-inline text-secondary small" href="#">Remove from Cart</a><span class="d-none d-sm-inline d-md-none d-xxl-inline">  |   </span><a class="mb-0 d-block d-sm-inline d-md-block d-xxl-inline text-secondary small" href="#">Move to Wish List </a></small></div>
@@ -184,20 +203,20 @@
                 <div class="col-12 mb-3 shopping-cart-item">
                   <div class="row border py-3 px-2 mx-auto">
                     <div class="col-4 col-md-6 col-lg-4 mb-md-3 mb-xl-0">
-                      <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="#"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
+                      <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="./item-details.html"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
                     </div>
                     <div class="col-8 col-md-6 col-lg-8">
                       <div class="row">
-                        <div class="col-12 mb-2"> <a class="mb-2 d-block" href="#">Apple AirPods w/ Wireless Charging Case</a>
+                        <div class="col-12 mb-2"> <a class="mb-2 d-block" href="./item-details.html">Apple AirPods w/ Wireless Charging Case</a>
                           <p class="mb-2 align-self-end item-detail-price">6370 </p>
                         </div>
                         <div class="col-sm-7 col-md-12 col-xl-4 mb-2"><small class="mb-2 d-block"><span class="fw-bold d-block d-md-inline d-block">Delivery Method: </span><span class="d-block">In-Store Pickup </span></small><small><span class="small d-block">Choose store during checkout.</span></small></div>
                         <div class="col-sm-5 col-md-12 col-lg-6 col-xl-4 col-xxl-3 mb-2 mb-lg-0">
                           <label for="quantity">Quantity </label>
                           <div class="input-group">
-                            <button class="btn btn-outline-secondary" id="button-addon1" type="button"> <i class="bi-dash"></i></button>
-                            <input class="form-control text-center" type="text" placeholder="1" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                            <button class="btn btn-outline-secondary" id="button-addon2" type="button"> <i class="bi-plus"></i></button>
+                            <button class="btn btn-outline-secondary" id="itemQtyDecr" type="button" onclick="itemQtyDecr()"> <i class="bi-dash"></i></button>
+                            <input class="form-control text-center" id="itemQty" type="text" placeholder="1" aria-label="Example text with button addon" aria-describedby="button-addon1" value="1">
+                            <button class="btn btn-outline-secondary" id="itemQtyIncr" type="button" onclick="itemQtyIncr()"> <i class="bi-plus"></i></button>
                           </div>
                         </div>
                         <div class="col-lg-6 col-xl-4 col-xxl-5 text-start align-self-end align-self-center text-xxl-end"><small class="cart-actions text-xxl-end"> <a class="mb-0 d-block d-sm-inline d-md-block d-lg-block d-xxl-inline text-secondary small" href="#">Remove from Cart</a><span class="d-none d-sm-inline d-md-none d-xxl-inline">  |   </span><a class="mb-0 d-block d-sm-inline d-md-block d-xxl-inline text-secondary small" href="#">Move to Wish List </a></small></div>

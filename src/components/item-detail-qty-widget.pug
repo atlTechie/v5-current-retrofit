@@ -1,7 +1,7 @@
 label(for="quantity") Quantity 
 .input-group
-    button#button-addon1.btn.btn-outline-secondary(type='button') 
+    button#itemQtyDecr.btn.btn-outline-secondary(type='button' onclick="itemQtyDecr()") 
         i.bi-dash
-    input.form-control.text-center(type='text' placeholder='1' aria-label='Example text with button addon' aria-describedby='button-addon1')
-    button#button-addon2.btn.btn-outline-secondary(type='button') 
+    input#itemQty.form-control.text-center(type='text' placeholder='1' aria-label='Example text with button addon' aria-describedby='button-addon1' value="1")
+    button#itemQtyIncr.btn.btn-outline-secondary(type='button' onclick="itemQtyIncr()") 
         i.bi-plus

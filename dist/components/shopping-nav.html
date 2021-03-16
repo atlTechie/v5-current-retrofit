@@ -2,21 +2,21 @@
 <div class="row mx-auto">
   <div class="col-12 px-md-0">
     <div class="row mb-2 align-items-center" id="shopping-navbar">
-      <div class="col-8 col-md-3 col-xl-2 order-1 mb-3"><a class="btn btn-primary w-100" id="stack-menu-toggle" onclick="openNav()">Departments</a></div>
+      <div class="col-8 col-md-3 col-xl-2 order-1 mb-3 mb-sm-0"><a class="btn btn-primary w-100" id="stack-menu-toggle" onclick="openNav()">Departments</a></div>
       <div class="col-4 col-md-2 col-xl-1 order-2 order-md-3">
-        <div class="row">
-          <div class="col-6 text-center"><a class="lead" href="./shopping-cart.html"><i class="bi-basket d-block"></i><span class="d-none">Cart</span></a></div>
-          <div class="col-6"><a class="lead" href="./wishlist.html"><i class="bi-heart d-block"></i><span class="d-none">List</span></a></div>
+        <div class="row" id="header-row">
+          <div class="col-6 text-center"><a class="lead" href="./shopping-cart.html"><i class="bi-basket" id="item-added"></i><span class="d-none">Cart</span></a></div>
+          <div class="col-6"><a class="lead" id="added-to-wishlist" href="./wishlist.html"><i class="bi-heart d-block"></i><span class="d-none">List</span></a></div>
         </div>
       </div>
       <div class="col-12 col-md-7 col-xl-9 order-3 order-md-2">
         <div class="input-group">
-          <select class="form-select d-none d-xl-block" name="dept-dropdown" style="width: 100px!important;">
+          <select class="form-select d-none d-xl-block" id="cboCatalogCategory" name="dept-dropdown" style="flex: .25; width: 250px!important;">
             <option value="Apple Store">All Departments</option>
             <option value="Apple Store">Apple Store</option>
             <option value="Apple Store">Baby</option>
           </select>
-          <input class="form-control" type="text"/><a class="btn btn-primary" href="#"><i class="bi-search"></i></a>
+          <input class="form-control psg_department_search_textbox" id="productkeywords" type="text" style="flex: 1; width: 75%!;"/><a class="btn btn-primary" href="#"><i class="bi-search"></i></a>
         </div>
       </div>
     </div>
@@ -28,33 +28,52 @@
           <div class="ml-auto closebtn" onclick="closeNav()"> <i class="bi bi-x-circle"></i></div>
         </div>
       </div>
-      <ul class="list-group list-group-flush">
-        <li><a href="#">Shop The Catalog</a>
-          <ul>
-            <li><a href="#">Apple</a></li>
-            <li><a href="#">Baby</a></li>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Charitable Organizations</a></li>
-            <li><a href="#">Electronics</a></li>
-            <li><a href="#">Fashion Accessories</a></li>
-            <li><a href="#">Gift Baskets</a></li>
-            <li><a href="#">Home & Garden</a></li>
-            <li><a href="#">Jewelry</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="#">Office Products</a></li>
-            <li><a href="#">On Sale Now!</a></li>
-            <li><a href="#">Personal Care</a></li>
-            <li><a href="#">Pets</a></li>
-            <li><a href="#">Sporting Goods</a></li>
-            <li><a href="#">Tools & Harware</a></li>
-            <li><a href="#">Toys & Hobbies</a></li>
-            <li><a href="#">Video Games</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Travel</a></li>
-      </ul>
+      <div class="row">
+        <ul class="list-group list-group-flush">
+          <li><a href="#">Shop The Catalog</a>
+            <ul>
+              <li><a href="#">Apple
+                  <ul> 
+                    <li> <a href="# ">Airpods </a></li>
+                    <li> <a href="# ">Apple TV </a></li>
+                    <li> <a href="# ">iPads</a></li>
+                    <li> <a href="# ">iPod Accessories</a></li>
+                    <li> <a href="# ">iPods </a></li>
+                    <li> <a href="# ">Mac Systems </a></li>
+                    <li> <a href="# ">Watches </a></li>
+                  </ul></a></li>
+              <li><a href="#">Baby
+                  <ul> 
+                    <li> <a href="#">Care & Safety</a></li>
+                    <li> <a href="#">Clothing</a></li>
+                    <li> <a href="#">Feeding</a></li>
+                    <li> <a href="#">Gear</a></li>
+                    <li> <a href="#">Nursery</a></li>
+                  </ul></a>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Charitable Organizations</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Fashion Accessories</a></li>
+                <li><a href="#">Gift Baskets</a></li>
+                <li><a href="#">Home & Garden</a></li>
+                <li><a href="#">Jewelry</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Office Products</a></li>
+                <li><a href="#">On Sale Now!</a></li>
+                <li><a href="#">Personal Care</a></li>
+                <li><a href="#">Pets</a></li>
+                <li><a href="#">Sporting Goods</a></li>
+                <li><a href="#">Tools & Harware</a></li>
+                <li><a href="#">Toys & Hobbies</a></li>
+                <li><a href="#">Video Games</a></li>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Travel</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
 </div>

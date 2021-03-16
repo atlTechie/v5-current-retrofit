@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="mdl-js"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Drilldown Shopping Menu-->
+  <script src="RT%20V5_files/jquery-3.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link href="RT%20V5_files/jquery-stack-menu.css" rel="stylesheet">
+  <!-- Drilldown Stack Menu Javascript-->
+  <script src="RT%20V5_files/jquery-stack-menu.js"></script>
+  <script>
+    $(function(){
+    $("#stack-menu").stackMenu()
+    });
+  </script>
+  <!-- Firebase Authentication-->
+  <script src="RT%20V5_files/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="RT%20V5_files/firebase-ui-auth.css">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="RT%20V5_files/bootstrap-icons.css">
+  <link href="RT%20V5_files/bootstrap.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="RT%20V5_files/style.css">
+  <title>RT V5</title>
+</head>
+<body> 
+  <header> 
+    <div class="container-fluid"> 
+      <div class="row bg-warning">
+        <div class="col-6 col-sm-4 col-md-2 col-xl-1 mx-auto py-2"><a href="http://127.0.0.1:5500/"> <img class="img-fluid" src="RT%20V5_files/CloudLogo.png"></a></div>
+      </div>
+      <div class="row"> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+          <div class="container-fluid"><a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="flex-grow-1 d-flex flex-column py-3 align-content-center justify-content-center">
+    <div class="container-fluid"> 
+      <div class="row"> 
+        <div class="col-lg-10 col-xl-8 mx-auto text-center content-bg">
+          <div class="row mx-auto">
+            <div class="col-12 px-md-0">
+              <div class="row mb-2 align-items-center" id="shopping-navbar">
+                <div class="col-8 col-md-3 col-xl-2 order-1 mb-3 mb-sm-0"><a class="btn btn-primary w-100" id="stack-menu-toggle" onclick="openNav()">Departments</a></div>
+                <div class="col-4 col-md-2 col-xl-1 order-2 order-md-3">
+                  <div class="row">
+                    <div class="col-6 text-center"><a class="lead" href="http://127.0.0.1:5500/dist/shopping-cart.html"><i class="bi-basket d-block"></i><span class="d-none">Cart</span></a></div>
+                    <div class="col-6"><a class="lead" href="http://127.0.0.1:5500/dist/wishlist.html"><i class="bi-heart d-block"></i><span class="d-none">List</span></a></div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-7 col-xl-9 order-3 order-md-2">
+                  <div class="input-group">
+                    <select class="form-select d-none d-xl-block" id="cboCatalogCategory" name="dept-dropdown" style="flex: .25; width: 250px!important;">
+                      <option value="Apple Store">All Departments</option>
+                      <option value="Apple Store">Apple Store</option>
+                      <option value="Apple Store" selected="selected">Baby</option>
+                    </select>
+                    <input class="form-control psg_department_search_textbox" id="productkeywords" type="text" style="flex: 1; width: 75%!;"><a class="btn btn-primary" href="#"><i class="bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12"> 
+              <nav class="text-start bg-white stack-menu" id="stack-menu">
+                <div class="row justify-content-end d-block mb-4"> 
+                  <div class="col-2 py-2">
+                    <div class="ml-auto closebtn" onclick="closeNav()"> <i class="bi bi-x-circle"></i></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="list-group list-group-flush stack-menu__list stack-menu__list--root stack-menu__list--active">
+                    <li class="stack-menu__item" data-id="0"><a href="#" class="stack-menu__link stack-menu__link--parent">Shop The Catalog</a>
+                      <ul class="stack-menu__list"><li class="stack-menu__item"><a class="stack-menu__link stack-menu__link--back" href="#">&nbsp;</a></li>
+                        <li class="stack-menu__item" data-id="1"><a href="#" class="stack-menu__link stack-menu__link--parent">Apple
+                            </a><ul class="stack-menu__list"><li class="stack-menu__item"><a class="stack-menu__link stack-menu__link--back" href="#">&nbsp;</a></li><a href="#" class="stack-menu__link"> 
+                              </a><li class="stack-menu__item" data-id="2"><a href="#" class="stack-menu__link"> </a><a href="# " class="stack-menu__link">Airpods </a></li>
+                              <li class="stack-menu__item" data-id="3"> <a href="# " class="stack-menu__link">Apple TV </a></li>
+                              <li class="stack-menu__item" data-id="4"> <a href="# " class="stack-menu__link">iPads</a></li>
+                              <li class="stack-menu__item" data-id="5"> <a href="# " class="stack-menu__link">iPod Accessories</a></li>
+                              <li class="stack-menu__item" data-id="6"> <a href="# " class="stack-menu__link">iPods </a></li>
+                              <li class="stack-menu__item" data-id="7"> <a href="# " class="stack-menu__link">Mac Systems </a></li>
+                              <li class="stack-menu__item" data-id="8"> <a href="# " class="stack-menu__link">Watches </a></li>
+                            </ul></li>
+                        <li class="stack-menu__item" data-id="9"><a href="#" class="stack-menu__link stack-menu__link--parent">Baby
+                            </a><ul class="stack-menu__list"><li class="stack-menu__item"><a class="stack-menu__link stack-menu__link--back" href="#">&nbsp;</a></li><a href="#" class="stack-menu__link"> 
+                              </a><li class="stack-menu__item" data-id="10"><a href="#" class="stack-menu__link"> </a><a href="#" class="stack-menu__link">Care &amp; Safety</a></li>
+                              <li class="stack-menu__item" data-id="11"> <a href="#" class="stack-menu__link">Clothing</a></li>
+                              <li class="stack-menu__item" data-id="12"> <a href="#" class="stack-menu__link">Feeding</a></li>
+                              <li class="stack-menu__item" data-id="13"> <a href="#" class="stack-menu__link">Gear</a></li>
+                              <li class="stack-menu__item" data-id="14"> <a href="#" class="stack-menu__link">Nursery</a></li>
+                            </ul>
+                          </li><li class="stack-menu__item" data-id="15"><a href="#" class="stack-menu__link">Books</a></li>
+                          <li class="stack-menu__item" data-id="16"><a href="#" class="stack-menu__link">Charitable Organizations</a></li>
+                          <li class="stack-menu__item" data-id="17"><a href="#" class="stack-menu__link">Electronics</a></li>
+                          <li class="stack-menu__item" data-id="18"><a href="#" class="stack-menu__link">Fashion Accessories</a></li>
+                          <li class="stack-menu__item" data-id="19"><a href="#" class="stack-menu__link">Gift Baskets</a></li>
+                          <li class="stack-menu__item" data-id="20"><a href="#" class="stack-menu__link">Home &amp; Garden</a></li>
+                          <li class="stack-menu__item" data-id="21"><a href="#" class="stack-menu__link">Jewelry</a></li>
+                          <li class="stack-menu__item" data-id="22"><a href="#" class="stack-menu__link">Movies</a></li>
+                          <li class="stack-menu__item" data-id="23"><a href="#" class="stack-menu__link">Music</a></li>
+                          <li class="stack-menu__item" data-id="24"><a href="#" class="stack-menu__link">Office Products</a></li>
+                          <li class="stack-menu__item" data-id="25"><a href="#" class="stack-menu__link">On Sale Now!</a></li>
+                          <li class="stack-menu__item" data-id="26"><a href="#" class="stack-menu__link">Personal Care</a></li>
+                          <li class="stack-menu__item" data-id="27"><a href="#" class="stack-menu__link">Pets</a></li>
+                          <li class="stack-menu__item" data-id="28"><a href="#" class="stack-menu__link">Sporting Goods</a></li>
+                          <li class="stack-menu__item" data-id="29"><a href="#" class="stack-menu__link">Tools &amp; Harware</a></li>
+                          <li class="stack-menu__item" data-id="30"><a href="#" class="stack-menu__link">Toys &amp; Hobbies</a></li>
+                          <li class="stack-menu__item" data-id="31"><a href="#" class="stack-menu__link">Video Games</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li class="stack-menu__item" data-id="32"><a href="#" class="stack-menu__link">Events</a></li>
+                    <li class="stack-menu__item" data-id="33"><a href="#" class="stack-menu__link">Travel</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-xl-8 mb-3 text-start"><a class="d-block mb-2" href="http://127.0.0.1:5500/dist/search-results.html"><i class="bi-arrow-left-circle pe-1"></i><span>Back to Search Results</span></a>
+              <h4 class="mb-0 item-detail-item-title">Apple AirPods w/ Wireless Charging Case</h4><small class="font-weight-bold pe-1">Model Number:<span class="item-detail-model-number">MV7N2AM/A </span></small>
+            </div>
+            <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="favorite-item text-end pe-2"><i class="bi-heart"></i></div>
+                  <div class="item-detail-main-image-wrapper"><img class="img-fluid" src="RT%20V5_files/6084400_sd.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4 text-end" id="item-detail-pricing-wrapper">
+              <div class="row mt-3 mt-md-0 align-items-end">
+                <div class="col-6 text-start"><small class="text-success">On Sale Now! </small></div>
+                <div class="col-6"><small class="d-block">From<span class="h2 item-detail-price">6370 </span></small></div>
+                <div class="col-12 mb-3">
+                  <div class="alert alert-primary text-start mt-3 mb-0"><small class="mb-0">Quantity limit of 3 per order. In-store pickup is available.</small></div>
+                </div>
+                <div class="col-12 mb-3 text-start">
+                  <label for="select">Select Delivery Method</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected="selected">Delivery Options</option>
+                    <option value="1">Ship to Address</option>
+                    <option value="2">In-Store Pickup</option>
+                  </select>
+                </div>
+                <div class="col-12 mb-3 text-start">
+                  <p class="mb-0 text-muted">You will select the store during checkout.</p><a data-bs-toggle="collapse" href="#item-detail-store-list" role="button" aria-expanded="false" aria-controls="item-detail-store-list"><span class="i bi-geo-alt-fill"> </span><span>See available stores near you.</span></a>
+                </div>
+                <div class="col-12">
+                  <div class="row align-items-end">
+                    <div class="col-6 text-start">
+                      <label for="quantity">Quantity </label>
+                      <div class="input-group">
+                        <button class="btn btn-outline-secondary" id="button-addon1" type="button"> <i class="bi-dash"></i></button>
+                        <input class="form-control text-center" type="text" placeholder="1" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <button class="btn btn-outline-secondary" id="button-addon2" type="button"> <i class="bi-plus"></i></button>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-outline-primary w-100" id="itemAddedToastBtn" onclick="itemAddedtoCart()">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12"> 
+                  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+                    <div class="toast fade hide" id="itemAddedToast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header"><img class="rounded me-2" src="RT%20V5_files/a.html" alt="..."><strong class="me-auto">Bootstrap</strong><small>11 mins ago</small>
+                        <button class="btn-close" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">You added Apple AirPods w/ Wireless Charging Case to cart</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 text-start" id="item-detail-available-stores">
+                  <ul class="list-group list-group-flush collapse" id="item-detail-store-list">
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-2"><img class="img-responsive" src="RT%20V5_files/bestbuyImg.png" alt=""></div>
+                        <div class="col-10">
+                          <p class="mb-0">Order Today, Pick up on 1/25/2021</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-2"><img class="img-responsive" src="RT%20V5_files/bestbuyImg.png" alt=""></div>
+                        <div class="col-10">
+                          <p class="mb-0">Order Today, Pick up on 1/25/2021</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-2"><img class="img-responsive" src="RT%20V5_files/bestbuyImg.png" alt=""></div>
+                        <div class="col-10">
+                          <p class="mb-0">Order Today, Pick up on 1/25/2021</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-2"><img class="img-responsive" src="RT%20V5_files/bestbuyImg.png" alt=""></div>
+                        <div class="col-10">
+                          <p class="mb-0">Order Today, Pick up on 1/25/2021</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-2"><img class="img-responsive" src="RT%20V5_files/bestbuyImg.png" alt=""></div>
+                        <div class="col-10">
+                          <p class="mb-0">Order Today, Pick up on 1/25/2021</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <h5 class="text-start">Item Details</h5>
+            </div>
+            <div class="col-12 text-start">
+              <div id="item-detail-item-description">
+                <p>The new AirPods combine intelligent design with 
+breakthrough technology and crystal-clear sound. Powered by the new 
+Apple H1 headphone chip, AirPods now feature hands-free access to Siri 
+using just your voice. And up to 3 hours of talk time on a single 
+charge.¹</p>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-12" id="shopping-disclaimer"><small class="text-center d-block text-muted">Some
+ content is provided by a third party on an as-is basis. This content is
+ subject to change and/or removal at any time. Points and availability 
+of items are subject to change.</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer> 
+    <div class="container-fluid"> 
+      <div class="row"> 
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
+        </ul>
+      </div>
+      <div class="row py-2 bg-warning"> <small class="d-block text-center">Copyright © 2021. RewardTrax.com</small></div>
+    </div>
+  </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<script src="RT%20V5_files/bootstrap.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first-->
+<script src="RT%20V5_files/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to usehttps://firebase.google.com/docs/web/setup#available-libraries
+-->
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+  apiKey: "AIzaSyBLvfcaU_K95kHd_yUVO9__k5fQB6UJHC4",
+  authDomain: "rt-v5-participant-sites.firebaseapp.com",
+  databaseURL: "https://rt-v5-participant-sites-default-rtdb.firebaseio.com",
+  projectId: "rt-v5-participant-sites",
+  storageBucket: "rt-v5-participant-sites.appspot.com",
+  messagingSenderId: "383414696567",
+  appId: "1:383414696567:web:e8cfc3541a4b4b91ce6472"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="RT%20V5_files/app.js"></script></body><!-- Optional JavaScript; choose one of the two!--><!-- Option 1: Bootstrap Bundle with Popper--><div style="all: initial;" id="__genieContainer"></div></html>
