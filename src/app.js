@@ -1,5 +1,24 @@
 console.log("app is running");
 
+// Toggle b/w Login-Activation and Forgot Password
+document.getElementById("forgot-password-content").classList.add("hideThis");
+
+document.getElementById("back-to-login").addEventListener("click", function () {
+  //   console.log("clicked");
+  document.getElementById("login-activate-content").style.display = "block";
+
+  document.getElementById("forgot-password-content").style.display = "none";
+});
+
+document
+  .getElementById("forgot-your-password")
+  .addEventListener("click", function () {
+    //   console.log("clicked");
+    document.getElementById("login-activate-content").style.display = "none";
+
+    document.getElementById("forgot-password-content").style.display = "block";
+  });
+
 /*
 =======================Shopping===============================
 */

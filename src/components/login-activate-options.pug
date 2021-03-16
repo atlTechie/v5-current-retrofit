@@ -1,0 +1,19 @@
+
+#login-activate-content
+    .row
+        .col-12 
+            .display-4 Welcome! 
+            p Please log in or register your account.
+    .row
+        .col-12.mb-3
+            ul#LoginOrEnroll.nav.nav-tabs(role='tablist')
+                li.nav-item(role='presentation')
+                    button#login-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#login' type='button' role='tab' aria-controls='login' aria-selected='true') Log In 
+                li.nav-item(role='presentation')
+                    button#enroll-tab.nav-link(data-bs-toggle='tab' data-bs-target='#enroll' type='button' role='tab' aria-controls='enroll' aria-selected='false') Register
+        .col-12
+            #LoginOrEnrollContent.tab-content
+                #login.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='login-tab') 
+                    include ./form-login.pug
+                #enroll.tab-pane.fade(role='tabpanel' aria-labelledby='enroll-tab') 
+                    include ./form-activation.pug

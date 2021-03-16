@@ -1,0 +1,50 @@
+
+<div id="login-activate-content">
+  <div class="row">
+    <div class="col-12"> 
+      <div class="display-4">Welcome! </div>
+      <p>Please log in or register your account.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 mb-3">
+      <ul class="nav nav-tabs" id="LoginOrEnroll" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Log In </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="enroll-tab" data-bs-toggle="tab" data-bs-target="#enroll" type="button" role="tab" aria-controls="enroll" aria-selected="false">Register</button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12">
+      <div class="tab-content" id="LoginOrEnrollContent">
+        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab"> 
+          <form class="text-start form-login">
+            <div class="mb-3">
+              <label class="form-label" for="loginInputEmail1">Email address</label>
+              <input class="form-control" id="loginInputEmail1" type="email" aria-describedby="emailHelp"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="loginInputPassword1">Password</label>
+              <input class="form-control" id="loginInputPassword1" type="password"/>
+            </div>
+            <div class="mb-3">   
+              <button class="btn btn-primary w-100" type="submit">Submit</button>
+            </div>
+            <div class="mb-0 text-center"> <a id="forgot-your-password" href="#">Forgot your password?</a></div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="enroll" role="tabpanel" aria-labelledby="enroll-tab"> 
+          <form class="text-start form-activation">
+            <div class="mb-3">
+              <label class="form-label" for="inputActivation1">Activation ID</label>
+              <input class="form-control" id="inputActivation1" type="activation" aria-describedby="activationHelp"/>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

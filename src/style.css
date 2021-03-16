@@ -22,6 +22,18 @@ main {
   background-attachment: fixed;
 }
 
+#forgot-password-content {
+  display: none;
+}
+
+.hideThis {
+  display: none;
+}
+
+.showThis {
+  display: block;
+}
+
 .content-bg {
   background: rgba(255, 255, 255, 0.95);
   padding: 2em;

@@ -30,54 +30,81 @@
       <div class="row"> 
         <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 mx-auto text-start content-bg">
           <h1></h1>
-          <div class="row flex-column justify-content-center" id="login-info"> 
+          <div class="row flex-column justify-content-center" id="login-choices"> 
             <div class="col-12">   
               <div class="row mb-3"> 
                 <div class="col-6 col-sm-4 mb-3"> <img class="img-fluid" src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png"></div>
-                <div class="col-12"> 
-                  <div class="display-4">Welcome! </div>
-                  <p>Please log in or register your account.</p>
-                </div>
               </div>
-              <div class="row">
-                <div class="col-12 mb-3">
-                  <ul class="nav nav-tabs" id="LoginOrEnroll" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Log In </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="enroll-tab" data-bs-toggle="tab" data-bs-target="#enroll" type="button" role="tab" aria-controls="enroll" aria-selected="false">Register</button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-12">
-                  <div class="tab-content" id="LoginOrEnrollContent">
-                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab"> 
-                      <form class="text-start form-login">
-                        <div class="mb-3">
-                          <label class="form-label" for="loginInputEmail1">Email address</label>
-                          <input class="form-control" id="loginInputEmail1" type="email" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label" for="loginInputPassword1">Password</label>
-                          <input class="form-control" id="loginInputPassword1" type="password">
-                        </div>
+            </div>
+          </div>
+          <div id="login-activate-content">
+            <div class="row">
+              <div class="col-12"> 
+                <div class="display-4">Welcome! </div>
+                <p>Please log in or register your account.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <ul class="nav nav-tabs" id="LoginOrEnroll" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Log In </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="enroll-tab" data-bs-toggle="tab" data-bs-target="#enroll" type="button" role="tab" aria-controls="enroll" aria-selected="false">Register</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <div class="tab-content" id="LoginOrEnrollContent">
+                  <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab"> 
+                    <form class="text-start form-login">
+                      <div class="mb-3">
+                        <label class="form-label" for="loginInputEmail1">Email address</label>
+                        <input class="form-control" id="loginInputEmail1" type="email" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label" for="loginInputPassword1">Password</label>
+                        <input class="form-control" id="loginInputPassword1" type="password">
+                      </div>
+                      <div class="mb-3">   
                         <button class="btn btn-primary w-100" type="submit">Submit</button>
-                      </form>
-                    </div>
-                    <div class="tab-pane fade" id="enroll" role="tabpanel" aria-labelledby="enroll-tab"> 
-                      <form class="text-start form-activation">
-                        <div class="mb-3">
-                          <label class="form-label" for="inputActivation1">Activation ID</label>
-                          <input class="form-control" id="inputActivation1" type="activation" aria-describedby="activationHelp">
-                        </div>
-                        <button class="btn btn-primary w-100" type="submit">Submit</button>
-                      </form>
-                    </div>
+                      </div>
+                      <div class="mb-0 text-center"> <a id="forgot-your-password" href="#">Forgot your password?</a></div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="enroll" role="tabpanel" aria-labelledby="enroll-tab"> 
+                    <form class="text-start form-activation">
+                      <div class="mb-3">
+                        <label class="form-label" for="inputActivation1">Activation ID</label>
+                        <input class="form-control" id="inputActivation1" type="activation" aria-describedby="activationHelp">
+                      </div>
+                      <button class="btn btn-primary w-100" type="submit">Submit</button>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row" id="forgot-password-content">
+            <div class="col-12"> 
+              <div class="display-4">Reset Password </div>
+              <p>Please input your email address and create a 4 digit passcode. Password reset instructions will be sent to your email address. Remember the passcode you created. You will need it to complete your password reset.</p>
+            </div>
+            <form class="text-start form-forgotPassword">
+              <div class="mb-3">
+                <label class="form-label" for="forgotPasswordInputEmail1">Email address</label>
+                <input class="form-control" id="forgotPasswordInputEmail1" type="email" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="forgotPasswordInputPasscode1">Pass Code</label>
+                <input class="form-control" id="forgotPasswordInputPasscode1" type="password" placeholder="0000" value="0000">
+              </div>
+              <div class="mb-3">    
+                <button class="btn btn-primary w-100" type="submit">Submit</button>
+              </div>
+              <div class="mb-0 text-center"> <a id="back-to-login" href="#">Back to Log In </a></div>
+            </form>
           </div>
         </div>
       </div>
