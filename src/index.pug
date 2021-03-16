@@ -1,8 +1,43 @@
 extends layout
 
-block title 
-    h1= title
-block content
+block header
+
+block tempWidth
+    .col-10.col-sm-8.col-md-6.col-lg-5.col-xl-4.col-xxl-3.mx-auto.text-start.content-bg
+
+        block title 
+            h1= title
+
+
+        block content
+            .row#login-info.flex-column.justify-content-center 
+                .col-12    
+                    .row.mb-3 
+                        .col-6.col-sm-4.mb-3 
+                            img.img-fluid(src='https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png') 
+                        .col-12 
+                            .display-4 Welcome! 
+                            p Please log in or register your account.
+                            
+                    .row
+                        .col-12.mb-3
+                            ul#LoginOrEnroll.nav.nav-tabs(role='tablist')
+                                li.nav-item(role='presentation')
+                                    button#login-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#login' type='button' role='tab' aria-controls='login' aria-selected='true') Log In 
+                                li.nav-item(role='presentation')
+                                    button#enroll-tab.nav-link(data-bs-toggle='tab' data-bs-target='#enroll' type='button' role='tab' aria-controls='enroll' aria-selected='false') Register
+                        .col-12
+                            #LoginOrEnrollContent.tab-content
+                                #login.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='login-tab') 
+                                    include ./components/form-login.pug
+                                #enroll.tab-pane.fade(role='tabpanel' aria-labelledby='enroll-tab') 
+                                    include ./components/form-activation.pug
+                             
+                            
+
+block footer
+
+
     //- h1 Welcome to the Rewards Program 
     //- #firebaseui-auth-container 
     //- #loader Loading..
