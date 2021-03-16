@@ -11,7 +11,7 @@ block content
             include ./components/checkout-price-box.pug
             .row.my-3.d-md-block
                 .col-12 
-                    a.d-block.btn.btn-primary(href="#") Continue to Checkout
+                    a.d-block.btn.btn-primary(href="./order-confirmation.html") Continue to Checkout
             include ./components/shopping-cart-info-box.pug
             .row.mt-3.small.text-start 
                 .col-12.small 
@@ -32,7 +32,16 @@ block content
                         small.mb-0  NOTICE: Changing the address here may affect sales tax and can change the points required to redeem items in your cart. Your shipping address can also affect the availability of some items. 
                 .col-12#checkout-wrapper
                     include ./components/form-checkout.pug
+                .col-12#insufficient-points-wrapper 
+                    h40.border-bottom.fw-light Credit Card Billing Information 
+                    .alert.alert-warning 
+                        small.d-block.mb-0 
+                            span.fw-bold You have insufficient points in your account to redeem the items in the shopping cart. 
+                            span To purchase points with your credit card, you must provide the billing information below.
+
+                    include ./components/form-insufficient-points.pug
+                         
 
             .row.my-3.d-none
                 .col-12 
-                    a.d-block.btn.btn-primary(href="#") Continue to Checkout
+                    a.d-block.btn.btn-primary(href="./order-confirmation.html") Continue to Checkout

@@ -30,12 +30,12 @@
       </div>
       <div class="row"> 
         <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
-          <div class="container-fluid"><a class="navbar-brand" href="#">Navbar</a>
+          <div class="container-fluid"><a class="navbar-brand" href="./dist/welcome.html">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="../dist/welcome.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../dist/shopping.html">Shopping</a></li>
               </ul>
             </div>
           </div>
@@ -53,7 +53,7 @@
                 <div class="col-8 col-md-3 col-xl-2 order-1 mb-3 mb-sm-0"><a class="btn btn-primary w-100" id="stack-menu-toggle" onclick="openNav()">Departments</a></div>
                 <div class="col-4 col-md-2 col-xl-1 order-2 order-md-3">
                   <div class="row" id="header-row">
-                    <div class="col-6 text-center"><a class="lead" href="./shopping-cart.html"><i class="bi-basket" id="item-added"></i><span class="d-none">Cart</span></a></div>
+                    <div class="col-6 text-center"><a class="lead" href="./shopping-cart.html"><i class="bi-basket"></i><span id="item-added"></span><span class="d-none">Cart</span></a></div>
                     <div class="col-6"><a class="lead" id="added-to-wishlist" href="./wishlist.html"><i class="bi-heart d-block"></i><span class="d-none">List</span></a></div>
                   </div>
                 </div>
@@ -135,13 +135,15 @@
               <div class="row" id="shopping-cart-price-box">
                 <div class="col-8 text-start"> <small class="d-block fw-bold">Shipping & Sales Tax:</small></div>
                 <div class="col-4 text-end"> <small class="text-uppercase">Included</small></div>
-                <div class="col-8 text-start"> <small class="d-block fw-bold">Order Total<span class="small fw-normal"> (in points)</span></small></div>
+                <div class="col-8 text-start"> <small class="d-block fw-bold">Order Total:<span class="d-block small fw-normal"> (in points)</span></small></div>
                 <div class="col-4 text-end"> <small class="text-uppercase">10,012,250</small></div>
-                <div class="col-8 text-start"> <small class="d-block fw-bold">Points Remaining</small></div>
-                <div class="col-4 text-end"> <small class="text-uppercase">10,220,000</small></div>
+                <div class="col-8 text-start"> <small class="d-block fw-bold">Points Remaining:</small></div>
+                <div class="col-4 text-end"> <small class="text-uppercase d-block">10,220,000</small><small class="text-uppercase d-block text-danger">-10,220,000</small></div>
+                <div class="col-8 text-start"> <small class="d-block fw-bold">Credit Card Buy In:</small></div>
+                <div class="col-4 text-end"><small class="text-uppercase">$124.56</small></div>
               </div>
               <div class="row my-3 d-none d-md-block">
-                <div class="col-12"> <a class="d-block btn btn-primary" href="#">Continue to Checkout</a></div>
+                <div class="col-12"> <a class="d-block btn btn-primary" href="./checkout.html">Continue to Checkout</a></div>
               </div>
               <div class="row text-start mt-3 small" id="shopping-cart-info">
                 <div class="col-12 bg-light py-3"> 
@@ -154,10 +156,10 @@
               <div class="row" id="shopping-cart-grid">
                 <div class="col-12 mb-3 shopping-cart-item">
                   <div class="row border py-3 px-2 mx-auto">
-                    <div class="col-4 col-md-6 col-lg-4 mb-md-3 mb-xl-0">
+                    <div class="col-4 col-md-6 col-lg-4 col-xl-3 mb-md-3 mb-xl-0">
                       <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="./item-details.html"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
                     </div>
-                    <div class="col-8 col-md-6 col-lg-8">
+                    <div class="col-8 col-md-6 col-lg-8 col-xl-9">
                       <div class="row">
                         <div class="col-12 mb-2"> <a class="mb-2 d-block" href="./item-details.html">Apple AirPods w/ Wireless Charging Case</a>
                           <p class="mb-2 align-self-end item-detail-price">6370 </p>
@@ -178,10 +180,10 @@
                 </div>
                 <div class="col-12 mb-3 shopping-cart-item">
                   <div class="row border py-3 px-2 mx-auto">
-                    <div class="col-4 col-md-6 col-lg-4 mb-md-3 mb-xl-0">
+                    <div class="col-4 col-md-6 col-lg-4 col-xl-3 mb-md-3 mb-xl-0">
                       <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="./item-details.html"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
                     </div>
-                    <div class="col-8 col-md-6 col-lg-8">
+                    <div class="col-8 col-md-6 col-lg-8 col-xl-9">
                       <div class="row">
                         <div class="col-12 mb-2"> <a class="mb-2 d-block" href="./item-details.html">Apple AirPods w/ Wireless Charging Case</a>
                           <p class="mb-2 align-self-end item-detail-price">6370 </p>
@@ -202,10 +204,10 @@
                 </div>
                 <div class="col-12 mb-3 shopping-cart-item">
                   <div class="row border py-3 px-2 mx-auto">
-                    <div class="col-4 col-md-6 col-lg-4 mb-md-3 mb-xl-0">
+                    <div class="col-4 col-md-6 col-lg-4 col-xl-3 mb-md-3 mb-xl-0">
                       <div class="border shopping-cart-item-img p-1 py-md-3"> <a href="./item-details.html"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></a></div>
                     </div>
-                    <div class="col-8 col-md-6 col-lg-8">
+                    <div class="col-8 col-md-6 col-lg-8 col-xl-9">
                       <div class="row">
                         <div class="col-12 mb-2"> <a class="mb-2 d-block" href="./item-details.html">Apple AirPods w/ Wireless Charging Case</a>
                           <p class="mb-2 align-self-end item-detail-price">6370 </p>
@@ -226,7 +228,7 @@
                 </div>
               </div>
               <div class="row my-3 d-md-none">
-                <div class="col-12"> <a class="d-block btn btn-primary" href="#">Continue to Checkout</a></div>
+                <div class="col-12"> <a class="d-block btn btn-primary" href="./checkout.html">Continue to Checkout</a></div>
               </div>
             </div>
           </div>
