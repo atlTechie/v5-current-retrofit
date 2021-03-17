@@ -1,0 +1,22 @@
+extends layout
+
+block header
+
+block tempWidth
+    .col-10.col-sm-8.col-xl-6.mx-auto.text-start.content-bg
+
+        block title 
+            h1= title
+
+
+        block content
+            .row#login-choices.flex-column.justify-content-center 
+                .col-12    
+                    .row.mb-3 
+                        .col-6.col-sm-3.mb-3 
+                            img.img-fluid(src='https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png')
+                        .col-12 
+                            .display-4 Enrollment 
+                            
+            include ./components/form-enrollment-2.pug
+block footer
