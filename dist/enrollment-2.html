@@ -41,62 +41,82 @@
             </div>
           </div>
           <form id="form__enrollment" action="">
-            <div class="form-group mb-3">
-              <label for="enrollment__first-name">First Name</label>
-              <input class="form-control" id="enrollment__first-name" type="text">
-            </div>
-            <div class="form-group mb-3">
-              <label for="enrollment__last-name">Last Name</label>
-              <input class="form-control" id="enrollment__last-name" type="text">
-            </div>
-            <div class="form-group mb-3">
-              <label for="enrollment__birth-date">Birth Date</label>
-              <div class="input-group date">
-                <input class="form-control" id="enrollment__birth-date" type="text" required>
-                <div class="input-group-append"><span class="input-group-text"><span class="fas fa-calendar bi bi-calendar-event d-block h-100"></span></span></div>
-              </div>
-            </div>
-            <div class="form-group mb-3">
-              <label for="enrollment__hire-date">Hire Date</label>
-              <div class="input-group date">
-                <input class="form-control" id="enrollment__hire-date" type="text" required>
-                <div class="input-group-append"><span class="input-group-text"><span class="fas fa-calendar bi bi-calendar-event d-block h-100"></span></span></div>
-              </div>
-            </div>
-            <div class="form-group mb-3">
-              <label for="enrollment__communication-preference">Communication Preference</label>
-              <select class="custom-select form-select" id="enrollment__communication-preference" name="">
-                <option value="Choose..." selected>Choose</option>
-                <option value="Email">Emails</option>
-                <option value="SMS/Text">SMS/Text Message</option>
-                <option value="Push Notification">Push Notfication</option>
-              </select><small>*Not all communication is able to be sent to your preference.</small>
-            </div>
-            <div class="form-group mb-3">
-              <label for="enrollment__email">Email Address</label>
-              <input class="form-control" id="enrollment__email" type="email">
-            </div>
-            <div class="form-group mb-3">
-              <label for="enrollment__phone-number">Phone Number</label>
-              <input class="form-control" id="enrollment__phone-number" type="text">
-            </div>
-            <div class="form-group mb-3">
-              <label for="enrollment__address">Street Address</label>
-              <input class="form-control" id="enrollment__address" type="text">
-            </div>
-            <div class="form-group mb-3">
-              <div class="row">
-                <div class="col-lg-7 mb-3 mb-lg-0">
-                  <label for="enrollment__city">City</label>
-                  <input class="form-control" id="enrollment__city" type="text">
+            <div class="row"> 
+              <div class="col-12 col-md-6"> 
+                <div class="form-group mb-3">
+                  <label for="enrollment__first-name">First Name</label>
+                  <input class="form-control" id="enrollment__first-name" type="text">
                 </div>
-                <div class="col-lg-2 mb-3 mb-lg-0">
-                  <label for="enrollment__state">State</label>
-                  <input class="form-control" id="enrollment__state" type="text">
+              </div>
+              <div class="col-12 col-md-6"> 
+                <div class="form-group mb-3">
+                  <label for="enrollment__last-name">Last Name</label>
+                  <input class="form-control" id="enrollment__last-name" type="text">
                 </div>
-                <div class="col-lg-3 mb-3 mb-lg-0">
-                  <label for="enrollment__zip">Zip</label>
-                  <input class="form-control" id="enrollment__zip" type="text">
+              </div>
+              <div class="col-12 col-md-6"> 
+                <div class="form-group mb-3">
+                  <label for="enrollment__birth-date">Birth Date</label>
+                  <div class="input-group date">
+                    <input class="form-control" id="enrollment__birth-date" type="text" required>
+                    <div class="input-group-append"><span class="input-group-text"><span class="fas fa-calendar bi bi-calendar-event d-block h-100"></span></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6"> 
+                <div class="form-group mb-3">
+                  <label for="enrollment__hire-date">Hire Date</label>
+                  <div class="input-group date">
+                    <input class="form-control" id="enrollment__hire-date" type="text" required>
+                    <div class="input-group-append"><span class="input-group-text"><span class="fas fa-calendar bi bi-calendar-event d-block h-100"></span></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6"> 
+                <div class="form-group mb-3">
+                  <label for="enrollment__email">Email Address</label>
+                  <input class="form-control" id="enrollment__email" type="email">
+                </div>
+              </div>
+              <div class="col-12 col-md-6"> 
+                <div class="form-group mb-3">
+                  <label for="enrollment__phone-number">Phone Number</label>
+                  <input class="form-control" id="enrollment__phone-number" type="text">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group mb-3">
+                  <label for="enrollment__communication-preference">Communication Preference</label>
+                  <select class="custom-select form-select" id="enrollment__communication-preference" name="">
+                    <option value="Choose..." selected>Choose</option>
+                    <option value="Email">Emails</option>
+                    <option value="SMS/Text">SMS/Text Message</option>
+                    <option value="Push Notification">Push Notfication</option>
+                  </select><small>*Not all communication is able to be sent to your preference.</small>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group mb-3">
+                  <label for="enrollment__address">Street Address</label>
+                  <input class="form-control" id="enrollment__address" type="text">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group mb-3">
+                  <div class="row">
+                    <div class="col-lg-7 mb-3 mb-lg-0">
+                      <label for="enrollment__city">City</label>
+                      <input class="form-control" id="enrollment__city" type="text">
+                    </div>
+                    <div class="col-lg-2 mb-3 mb-lg-0">
+                      <label for="enrollment__state">State</label>
+                      <input class="form-control" id="enrollment__state" type="text">
+                    </div>
+                    <div class="col-lg-3 mb-3 mb-lg-0">
+                      <label for="enrollment__zip">Zip</label>
+                      <input class="form-control" id="enrollment__zip" type="text">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
