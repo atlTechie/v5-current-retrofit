@@ -1,0 +1,9 @@
+extends layout
+
+block tempWidth
+    .col-lg-10.col-xl-8.mx-auto.text-center.content-bg
+        block title 
+            h1 Performance Tracking
+        block content
+            -for(i=0; i< 4; i++)
+                include ./components/claims-promo-card.pug
