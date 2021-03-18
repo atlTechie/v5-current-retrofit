@@ -1,0 +1,17 @@
+extends layout
+
+block tempWidth
+    .col-lg-10.col-xl-8.mx-auto.text-center.content-bg
+        block title 
+            h1 My Account
+        block content
+            .row
+                .col-12.mb-3
+                    h4.text-start.fw-light.border-bottom My Point Activity
+                .col-12.mb-3 
+                    include ./components/my-account-point-token.pug
+                .col-12.mb-3
+                    h4.text-start.fw-light.border-bottom My Transactions
+                .col-12
+                    include ./components/my-account-transaction-table.pug
+

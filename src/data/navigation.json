@@ -1,0 +1,365 @@
+{
+  "nav":[
+    {
+      "id": 1,
+      "name": "Login",
+      "public": true,
+      "path": "index",
+      "type": "custom",
+      "screenTitle": "Welcome!",
+      "subtitle": "Rewards are just a click away",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 2,
+      "name": "Forgot Password",
+      "public": true,
+      "path": "forgot-password",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 3,
+      "name": "Reset Confirmation",
+      "public": true,
+      "path": "reset-confirmation",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 4,
+      "name": "Activation",
+      "public": true,
+      "path": "activation",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 5,
+      "name": "Profile",
+      "public": false,
+      "path": "profile",
+      "type": "system",
+      "screenTitle": "Profile",
+      "subtitle": "Manage your account information",
+      "inNav": true,
+      "location": "header"
+
+    },
+    {
+      "id": 6,
+      "name": "System Error",
+      "public": true,
+      "path": "system-error",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "Oops! We ran into a problem!",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 7,
+      "name": "Session Expired",
+      "public": true,
+      "path": "system-timeout",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "Session Expired",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 8,
+      "name": "404",
+      "public": true,
+      "path": "404",
+      "type": "system",
+      "screenTitle": "404",
+      "subtitle": "Page Not Found",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 9,
+      "name": "Welcome",
+      "public": false,
+      "path": "welcome",
+      "type": "custom",
+      "screenTitle": "Welcome back, ",
+      "subtitle": "Check out what's new.",
+      "inNav": true,
+      "location": "header"
+
+    },
+    {
+      "id": 10,
+      "name": "My Account",
+      "public": false,
+      "path": "my-account",
+      "type": "system",
+      "screenTitle": "My Account",
+      "subtitle": "View point and transaction history",
+      "inNav": true,
+      "location": "header"
+
+    },
+    {
+      "id": 11,
+      "name": "Performance Tracking",
+      "public": false,
+      "path": "performance-tracking",
+      "type": "system",
+      "screenTitle": "Performance Tracking",
+      "subtitle": "View your claims and invoices",
+      "inNav": true,
+      "location": "header"
+
+    },
+    {
+      "id": 12,
+      "name": "Quick Points",
+      "public": false,
+      "path": "quick-points",
+      "type": "custom",
+      "screenTitle": "Quick Points",
+      "subtitle": "Redeem your points for merchandise",
+      "inNav": true,
+      "location": "header"
+
+    },
+    {
+      "id": 13,
+      "name": "Leaderboard",
+      "public": false,
+      "path": "leaderboard",
+      "type": "system",
+      "screenTitle": "Leaderboard",
+      "subtitle": "Where do you rank?",
+      "inNav": true,
+      "location": "header"
+
+    },
+    {
+      "id": 14,
+      "name": "Learning",
+      "public": false,
+      "path": "learn-n-earn",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "Educate yourself and earn rewards!",
+      "inNav": true,
+      "location": "header"
+
+    },
+    {
+      "id": 15,
+      "name": "Shopping",
+      "public": false,
+      "path": "shopping",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": true,
+      "location": "header"
+
+    },
+    {
+      "id": 16,
+      "name": "Item Details",
+      "public": false,
+      "path": "item-details",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": " ",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 17,
+      "name": "Search Results",
+      "public": false,
+      "path": "search-results",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": " ",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 18,
+      "name": "Shopping Cart",
+      "public": false,
+      "path": "shopping-cart",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 19,
+      "name": "Wish List",
+      "public": false,
+      "path": "wishlist",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 20,
+      "name": "Checkout",
+      "public": false,
+      "path": "checkout",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 21,
+      "name": "Order Confirmation",
+      "public": false,
+      "path": "order-confirmation",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 22,
+      "name": "Order Receipt",
+      "public": false,
+      "path": "order-receipt",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": false,
+      "location": " "
+
+    },
+    {
+      "id": 23,
+      "name": "FAQ",
+      "public": false,
+      "path": "faq",
+      "type": "custom",
+      "screenTitle": "FAQ",
+      "subtitle": "",
+      "inNav": true,
+      "location": "footer"
+
+    },
+    {
+      "id": 24,
+      "name": "About Us",
+      "public": false,
+      "path": "about-us",
+      "type": "custom",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": true,
+      "location": "footer"
+
+    },
+    {
+      "id": 25,
+      "name": "Terms",
+      "public": false,
+      "path": "terms",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": true,
+      "location": "footer"
+
+    },
+    {
+      "id": 26,
+      "name": "Rules",
+      "public": false,
+      "path": "rules",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": true,
+      "location": "footer"
+
+    },
+    {
+      "id": 27,
+      "name": "Privacy Policy",
+      "public": false,
+      "path": "privacy-policy",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": true,
+      "location": "footer"
+
+    },
+    {
+      "id": 28,
+      "name": "All Wall",
+      "public": false,
+      "path": "all-wall",
+      "type": "system",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": true,
+      "location": "header"
+
+    },
+    {
+      "id": 29,
+      "name": "Communications",
+      "public": false,
+      "path": "communications",
+      "type": "custom",
+      "screenTitle": "",
+      "subtitle": "",
+      "inNav": true,
+      "location": "header"
+
+    },
+   
+    {
+      "id": 30,
+      "name": "Mobile app",
+      "public": false,
+      "path": "mobile-app",
+      "type": "custom",
+      "screenTitle": "Mobile App",
+      "subtitle": "Rewards on Demand",
+      "inNav": true,
+      "location": "header"
+
+    }
+  ]
+}

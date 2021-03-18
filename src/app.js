@@ -1,7 +1,32 @@
 console.log("app is running");
 
-// Toggle b/w Login-Activation and Forgot Password
+$.get("../src/data/navigation.json", function (data) {
+  console.log(data);
+  const navWrap = document.getElementById("hdr-nav");
+  const ftrNavWrap = document.getElementById("ftr-nav");
+  navWrap.innerHTML = "";
+  ftrNavWrap.innerHTML = "";
 
+  if (navWrap && ftrNavWrap) {
+    for (i = 0; i < data.nav.length; i++) {
+      // console.log(data.nav[i].name);
+
+      if (data.nav[i].inNav) {
+        if (data.nav[i].location == "header") {
+          navWrap.innerHTML += `
+      <li class="nav-item"><a class="nav-link" aria-current="page" href="./${data.nav[i].path}.html">${data.nav[i].name}</a></li>
+      `;
+        } else {
+          ftrNavWrap.innerHTML += `<li class="nav-item"><a class="nav-link" aria-current="page" href="./${data.nav[i].path}.html">${data.nav[i].name}</a></li>`;
+        }
+      }
+    }
+  }
+
+  // console.log(data);
+});
+
+// Toggle b/w Login-Activation and Forgot Password
 document.getElementById("forgot-password-content").classList.add("hideThis");
 
 document.getElementById("back-to-login").addEventListener("click", function () {
