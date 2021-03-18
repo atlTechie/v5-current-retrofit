@@ -1,0 +1,12 @@
+extends layout
+
+block tempWidth
+    .col-10.col-sm-8.col-md-6.mx-auto.text-start.content-bg
+
+        block title 
+            h1#screen-title.text-center Submit Your Claims
+        block content
+            .row 
+                .col-12.mb-3 
+                    include ./components/form-claims-default-1.pug
+                .col-12

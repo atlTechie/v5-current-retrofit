@@ -1,0 +1,37 @@
+form.text-start.form-login
+    .mb-3
+        label.form-label(for='claims-form-1-customer-company') Customer Company
+        input#claims-form-1-customer-company.form-control(type='text' aria-describedby='customerCompanyHelp')
+    .mb-3
+        label.form-label(for='claims-form-1-customer-phone') Customer Phone
+        input#claims-form-1-customer-phone.form-control(type='text' aria-describedby='customerPhoneHelp')
+    .mb-3
+        label.form-label(for='claims-form-1-invoice') Invoice Number
+        input#claims-form-1-invoice.form-control(type='text' aria-describedby='InvoiceHelp')
+    .mb-3
+        label.form-label(for='claims-form-1-sale-date') Sale Date
+        input#claims-form-1-sale-date.form-control(type='text' aria-describedby='saleDateHelp')
+    
+    .mb-3.border-bottom
+        h4.fw-light Add Your Products
+    .row.bg-light.py-3.mb-3#product-line-0 
+        .col-12.col-lg-3.mb-3 
+            label.form-label(for='claims-form-1-quantity-0') Quantity
+            input#claims-form-1-quantity-0.form-control(type='text' aria-describedby='quantityHelp')
+        .col-12.col-lg-5 
+            label.form-label(for='claims-form-1-product-code-0') Product Code
+            input#claims-form-1-product-code-0.form-control(type='text' aria-describedby='productCodeHelp')
+        .col-12.col-lg-4 
+            label.form-label(for='claims-form-1-sale-amount-0') Sale Amount
+            input#claims-form-1-sale-amount-0.form-control(type='text' aria-describedby='salemountHelp')
+        .col-12.mb-3
+            label.form-label(for='claims-form-1-product-description-0') Product Description
+            textarea#claims-form-1-product-description-0.form-control(type='textarea' aria-describedby='productDescriptionHelp')
+    .row 
+        .col-xl-8.mx-auto 
+            .row.text-center.align-items-center 
+                .col-12.col-lg-6.mb-3.mb-lg-0
+                    a.btn.btn-outline-primary.w-100(href="#") Add another product
+                .col-12.col-lg-6 
+                    button.btn.btn-primary.w-100(type='submit') Submit
+            
