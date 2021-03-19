@@ -1,7 +1,7 @@
 console.log("app is running");
 
 $.get("../src/data/navigation.json", function (data) {
-  console.log(data);
+  // console.log(data);
   const navWrap = document.getElementById("hdr-nav");
   const ftrNavWrap = document.getElementById("ftr-nav");
   navWrap.innerHTML = "";
@@ -24,6 +24,14 @@ $.get("../src/data/navigation.json", function (data) {
   }
 
   // console.log(data);
+});
+
+// Leaderboard
+$.get("../src/data/leaderboard.json", function (ldr) {
+  console.log(ldr);
+  for (i = 0; i < ldr.leaders.length; i++) {
+    console.log(ldr.leaders[i].region);
+  }
 });
 
 // Toggle b/w Login-Activation and Forgot Password
