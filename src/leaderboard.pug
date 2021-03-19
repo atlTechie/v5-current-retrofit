@@ -7,21 +7,5 @@ block tempWidth
             
         block content
             -for(i=0;i<20; i++)
-                .card.mb-3
-                    .card-body 
-                        .row 
-                            .col-3.col-sm-2.col-xl-2.text-center 
-                                small.d-block.text-uppercase Rank 
-                                p.mb-0.fw-bold 1
-                            .col-3.col-sm-2.col-xl-1.bg-primary.mb-3 
-                                img.img-fluid(src="https://robohash.org/aliaserrordolores.png?size=50x50&set=set1", alt="")
-                            .col-6.col-sm-3
-                                small.d-block.text-uppercase Name 
-                                p.mb-0.fw-bold Victor Alves 
-                            .col-6.col-sm-2
-                                small.d-block.text-uppercase Region 
-                                p.mb-0.fw-bold North
-                            .col-6.col-sm-2.text-xl-end
-                                small.d-block.text-uppercase Points
-                                p.mb-0.fw-bold 525,319
+                include ./components/leaderboard-card.pug
                        
